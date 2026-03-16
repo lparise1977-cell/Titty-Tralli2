@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titty Tralli | Luxury Hair Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+
+<style>
+body{margin:0;font-family:Poppins;background:#0b0b0b;color:white}
+
+h1,h2,h3{font-family:'Playfair Display'}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:black;
+border-bottom:1px solid #d4af37;
+position:sticky;
+top:0;
+z-index:100
+}
+
+.logo{font-size:28px;color:#d4af37;font-weight:600}
+
+nav a{color:white;margin-left:25px;text-decoration:none;font-size:15px}
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center
+}
+
+.hero-box{
+background:rgba(0,0,0,0.65);
+padding:60px;
+border-radius:10px
+}
+
+.hero h1{font-size:70px;color:#d4af37;margin:0}
+.hero p{font-size:24px;margin-top:10px}
+
+.btn{
+background:#d4af37;
+color:black;
+padding:14px 30px;
+border-radius:30px;
+text-decoration:none;
+border:none;
+cursor:pointer;
+font-weight:500
+}
+
+section{padding:90px 10%}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#d4af37;
+margin-bottom:60px
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center
+}
+
+.about img{width:100%;border-radius:12px}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:12px;
+text-align:center;
+border:1px solid #d4af37;
+transition:0.3s
+}
+
+.card:hover{transform:translateY(-5px)}
+
+.prices{max-width:600px;margin:auto}
+
+.price-row{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid #333
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s
+}
+
+.gallery img:hover{transform:scale(1.05)}
+
+.booking{
+background:#111;
+padding:40px;
+border-radius:12px;
+max-width:600px;
+margin:auto;
+border:1px solid #d4af37
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-bottom:18px;
+border:none;
+border-radius:6px
+}
+
+.calendar{
+max-width:900px;
+margin:50px auto
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+
+.review{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #d4af37
+}
+
+.map{margin-top:50px}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+border-top:1px solid #d4af37
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+color:white;
+text-decoration:none
+}
+
+.admin{
+background:#070707;
+padding:80px 10%
+}
+
+.agenda{
+max-width:700px;
+margin:auto;
+background:#111;
+padding:30px;
+border-radius:10px;
+border:1px solid #d4af37
+}
+
+.appointment{
+padding:10px 0;
+border-bottom:1px solid #333
+}
+
+@media(max-width:800px){
+.about{grid-template-columns:1fr}
+.hero h1{font-size:46px}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">TT Titty Tralli</div>
+<div>
+<a href="#about">Chi siamo</a>
+<a href="#servizi">Servizi</a>
+<a href="#prezzi">Prezzi</a>
+<a href="#galleria">Galleria</a>
+<a href="#prenota">Prenota</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-box">
+<h1>Titty Tralli</h1>
+<p>Stile e Bellezza per ogni Donna</p>
+<a class="btn" href="#prenota">Prenota Ora</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Chi Siamo</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80">
+<div>
+<p>Benvenuti da Titty Tralli Hair Salon. Un salone dedicato alla bellezza femminile con tecniche moderne e styling professionale.</p>
+<p>Il nostro obiettivo è valorizzare ogni cliente con servizi personalizzati e prodotti professionali.</p>
+</div>
+</div>
+</section>
+
+<section id="servizi">
+<h2 class="section-title">I Nostri Servizi</h2>
+<div class="services">
+<div class="card"><h3>Taglio & Styling</h3><p>Tagli personalizzati e pieghe professionali</p></div>
+<div class="card"><h3>Colorazione</h3><p>Balayage, schiariture e colore</p></div>
+<div class="card"><h3>Trattamenti</h3><p>Ricostruzione e cura del capello</p></div>
+</div>
+</section>
+
+<section id="prezzi">
+<h2 class="section-title">Listino Prezzi</h2>
+<div class="prices">
+<div class="price-row"><span>Taglio Donna</span><span>35€</span></div>
+<div class="price-row"><span>Colore</span><span>50€</span></div>
+<div class="price-row"><span>Balayage</span><span>80€</span></div>
+<div class="price-row"><span>Piega</span><span>25€</span></div>
+<div class="price-row"><span>Acconciatura</span><span>60€</span></div>
+</div>
+</section>
+
+<section id="galleria">
+<h2 class="section-title">La Nostra Galleria</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80">
+</div>
+</section>
+
+<section id="prenota">
+<h2 class="section-title">Prenota un Appuntamento</h2>
+
+<div class="booking">
+<input id="nome" placeholder="Nome">
+<input id="telefono" placeholder="Telefono">
+<select id="servizio">
+<option>Servizio</option>
+<option>Taglio</option>
+<option>Colore</option>
+<option>Balayage</option>
+<option>Piega</option>
+</select>
+<input id="data" type="date">
+<input id="ora" type="time">
+<button class="btn" onclick="prenota()">Prenota</button>
+</div>
+
+<div class="calendar" id="calendar"></div>
+
+<div class="map">
+<iframe width="100%" height="400" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via%20dei%20Peucezi%2024&output=embed"></iframe>
+</div>
+
+</section>
+
+<section>
+<h2 class="section-title">Cosa dicono le clienti</h2>
+<div class="testimonials">
+<div class="review">★★★★★ Servizio fantastico e staff molto professionale.</div>
+<div class="review">★★★★★ Il miglior salone della zona!</div>
+<div class="review">★★★★★ Colore perfetto ogni volta.</div>
+</div>
+</section>
+
+<section class="admin">
+<h2 class="section-title">Pannello Amministratore</h2>
+
+<div class="agenda" id="adminLista"></div>
+
+</section>
+
+<footer>
+<p>Titty Tralli Hair Salon</p>
+<p>Via dei Peucezi 24</p>
+<p>349 5397413</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/393495397413">💬</a>
+
+<script>
+
+function prenota(){
+
+let nome=document.getElementById("nome").value
+let telefono=document.getElementById("telefono").value
+let servizio=document.getElementById("servizio").value
+let data=document.getElementById("data").value
+let ora=document.getElementById("ora").value
+
+let appuntamento={title:servizio+" - "+nome,start:data+"T"+ora}
+
+let eventi=JSON.parse(localStorage.getItem("appuntamenti"))||[]
+
+eventi.push(appuntamento)
+
+localStorage.setItem("appuntamenti",JSON.stringify(eventi))
+
+location.reload()
+
+}
+
+let calendarEl=document.getElementById('calendar');
+
+let calendar=new FullCalendar.Calendar(calendarEl,{ 
+initialView:'dayGridMonth',
+height:650,
+events:JSON.parse(localStorage.getItem("appuntamenti"))||[]
+});
+
+calendar.render();
+
+let admin=document.getElementById("adminLista")
+
+let eventi=JSON.parse(localStorage.getItem("appuntamenti"))||[]
+
+eventi.forEach(e=>{
+
+let div=document.createElement("div")
+
+div.className="appointment"
+
+div.innerHTML=e.start+" - "+e.title
+
+admin.appendChild(div)
+
+})
+
+</script>
+
+</body>
+</html>
